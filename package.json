@@ -1,0 +1,38 @@
+{
+    "name": "lambda-snippets",
+    "displayName": "AWS Lambda Boilerplate Snippets for Node.JS",
+    "description": "Simple boilerplate AWS Lambda functions for Node.JS",
+    "icon": "images/lambda.png",
+    "version": "0.2.0",
+    "publisher": "loganarnett",
+    "galleryBanner": {
+        "color": "#F58536",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/loganarnett/vscode-lambda-snippets"
+    },
+    "bugs": {
+        "url": "https://github.com/loganarnett/vscode-lambda-snippets/issues",
+        "email": "logan@loganarnett.com"
+    },
+    "license": "MIT",
+    "categories": [
+        "Snippets"
+    ],
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vscode": "^0.11.x"
+    }
+}

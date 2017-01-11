@@ -1,0 +1,62 @@
+{
+	"Basic": {
+		"prefix": "lambda",
+		"body": [
+			"'use strict'",
+            "",
+            "exports.handler = function (event, context, callback) {",
+            "    console.log(JSON.stringify(`Event: ${event}`))",
+            "    // Lambda Code Here",
+            "    // context.succeed('Success!')",
+            "    // context.fail('Failed!')",
+            "}"
+		],
+		"description": "Basic Lambda Function"
+	},
+	"SDK": {
+		"prefix": "lambda-aws",
+		"body": [
+			"'use strict'",
+            "const AWS = require('aws-sdk');",
+            "",
+            "exports.handler = function (event, context, callback) {",
+            "    console.log(JSON.stringify(`Event: ${event}`))",
+            "    // Lambda Code Here",
+            "    // context.succeed('Success!')",
+            "    // context.fail('Failed!')",
+            "}"
+		],
+		"description": "Lambda Function with AWS SDK included"
+	},
+	"Bluebird": {
+		"prefix": "lambda-bb",
+		"body": [
+			"'use strict'",
+            "const Promise = require('bluebird');",
+            "",
+            "exports.handler = function (event, context, callback) {",
+            "    console.log(JSON.stringify(`Event: ${event}`))",
+            "    // Lambda Code Here",
+            "    // context.succeed('Success!')",
+            "    // context.fail('Failed!')",
+            "}"
+		],
+		"description": "Lambda Function with Bluebird Included"
+	},
+    "SDKBluebird": {
+		"prefix": "lambda-aws-bb",
+		"body": [
+			"'use strict'",
+            "const AWS = require('aws-sdk');",
+            "const Promise = require('bluebird');",
+            "",
+            "exports.handler = function (event, context, callback) {",
+            "    console.log(JSON.stringify(`Event: ${event}`))",
+            "    // Lambda Code Here",
+            "    // context.succeed('Success!')",
+            "    // context.fail('Failed!')",
+            "}"
+		],
+		"description": "Lambda Function with AWS SDK and Bluebird"
+	}
+}
