@@ -3,7 +3,7 @@
   "displayName": "AWS Lambda Boilerplate Snippets for Node.JS",
   "description": "Simple boilerplate AWS Lambda functions for Node.JS",
   "icon": "images/lambda.png",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "publisher": "loganarnett",
   "galleryBanner": {
     "color": "#F58536",
