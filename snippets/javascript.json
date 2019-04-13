@@ -58,5 +58,42 @@
             "}"
 		],
 		"description": "Lambda Function with AWS SDK and Bluebird"
+    },
+    "Async": {
+		"prefix": "lambda-async",
+		"body": [
+			"'use strict'",
+            "",
+            "exports.handler = async (event) {",
+            "    console.log(JSON.stringify(`Event: ${event}`))",
+            "    // Lambda Code Here",
+            "    // const response = {",
+            "    //     statusCode: 200,",
+            "    //     body: JSON.stringify('Hello from Lambda!'),",
+            "    // };",
+            "    // return response;",
+            "}"
+		],
+		"description": "Basic Lambda Async Function"
+    },
+    "SDKAsync": {
+		"prefix": "lambda-aws-async",
+		"body": [
+            "'use strict'",
+            "const AWS = require('aws-sdk');",
+            "",
+            "exports.handler = async (event) {",
+            "    console.log(JSON.stringify(`Event: ${event}`))",
+            "    // Lambda Code Here",
+            "    // const response = {",
+            "    //     statusCode: 200,",
+            "    //     body: JSON.stringify('Hello from Lambda!'),",
+            "    // };",
+            "    // return response;",
+            "}"
+		],
+		"description": "Basic Lambda Async Function with AWS SDK"
 	}
 }
+
+
